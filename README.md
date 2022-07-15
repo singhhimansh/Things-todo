@@ -1,4 +1,4 @@
-# <img src="https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png" width="50px"> Things To Do
+# <img src="https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png" width="30px"> Things To Do
 
 
 #### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Initially a sample Api Fetch the tasks which can be deleted.
@@ -45,4 +45,4 @@ Upcoming features:
 **Things To Do** requires [Node.js](https://nodejs.org/) to run.
 Install the dependencies and devDependencies and start the server.
 
-### **_Developed by Himanshu Singh_**
+#### **_Developed by Himanshu Singh_**
