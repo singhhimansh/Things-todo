@@ -1,4 +1,5 @@
-# ![alt logo](https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png) Things To Do
+# <img src="https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png" width="50px"> Things To Do
+
 
 #### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Initially a sample Api Fetch the tasks which can be deleted.
 
@@ -9,14 +10,14 @@
 
 ## Screenshots
 
-### Smartphone
+### Desktop
 
 Landing Page             |  Custom Tasks               
 :-------------------------:|:-------------------------:
 ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/api.png)  |  ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/custom%20task.png) 
 
 
-### Desktop
+### Smartphone
 
 Landing Page             |  No Task               | Custom Tasks
 :-------------------------:|:-------------------------:|:-------------------------:
