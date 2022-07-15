@@ -1,6 +1,6 @@
-# ![alt logo](https://github.com/singhhimansh/todo-react/blob/main/public/todo.png) Things To Do
+# ![alt logo](https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png) Things To Do
 
-### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Intially a sample Api Fetch the tasks which can be deleted.
+#### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Initially a sample Api Fetch the tasks which can be deleted.
 
 ## Tech Stack
  React.Js, TailwindCss
@@ -9,13 +9,23 @@
 
 ## Screenshots
 
-Landing Page             |  Shopping Page               | Cart Page
+### Smartphone
+
+Landing Page             |  Custom Tasks               
+:-------------------------:|:-------------------------:
+![](https://github.com/singhhimansh/todo-react/blob/main/public/images/api.png)  |  ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/custom%20task.png) 
+
+
+### Desktop
+
+Landing Page             |  No Task               | Custom Tasks
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/absharma9796/fresh-stock/blob/master/web/public/landing.png)  |  ![](https://github.com/absharma9796/fresh-stock/blob/master/web/public/shop.png) | ![](https://github.com/absharma9796/fresh-stock/blob/master/web/public/cart.png)
+![](https://github.com/singhhimansh/todo-react/blob/main/public/images/apimob.jpg)  |  ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/notask_mob.jpg) | ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/custommob.jpg)
 
 
-## Installation
-Features:
+## Features
+
+Current Features:
 1. Add custom daily tasks
 2. Mark the completed task checked by using checkbox.
 3. Keep a count of completed tasks.
@@ -31,7 +41,7 @@ Upcoming features:
 
 ## Installation
 
-**Things To Do** requires [Node.js](https://nodejs.org/)  >= v14.17.6 to run.
+**Things To Do** requires [Node.js](https://nodejs.org/) to run.
 Install the dependencies and devDependencies and start the server.
 
-## Developed by Himanshu Singh
+### **_Developed by Himanshu Singh_**
