@@ -4,14 +4,18 @@ import { useEffect, useState } from "react";
 import { info } from "autoprefixer";
 
 function App() {
+  // hook to fetch from API
   const [todoByID,  settodoByID] = useState({});
 
+  // hook for custom task inserted
   const [inputValue, setInputValue]= useState('');
 
+
+  // API call and fetching data in to a dict
   useEffect(() => {
     (async () => {
       const data = await fetch(
-        "https://jsonplaceholder.typicode.com/users/1/todos"
+        "https://singhhimansh.github.io/Json-API/api/todo.json"
       ).then((res) => res.json());
       // console.info(data)
       let dataDict={};
@@ -87,7 +91,9 @@ function App() {
                   return (
                     <div key={item.id} className="px-5 py-3 flex items-center gap-5">
                       <input type="checkbox" className="cursor-pointer flex-none" id={`todo-item-${item.id}`} checked={item.completed} onChange={(e)=> handleToggleChecked(e,item.id)} />
+
                       <label className={` pb-1 w-11/12 flex-initial cursor-pointer ${item.completed ? 'line-through' : '' } `} htmlFor={`todo-item-${item.id}`} >{item.title}</label>
+                      
                       <button type="button" onClick={()=>handeleDeleteTodo(item.id)} className="text-xs text-center flex-none text-white bg-red-400  border-2 border-solid border-red-200 rounded-full pb-4 w-5 h-5 hover:bg-red-500">
                         x
                       </button>
@@ -102,8 +108,10 @@ function App() {
             {/* completed tasks counter */}
             <div className="mt-10 text-lg font-semibold">Tasks completed : {Object.values(todoByID).filter((item)=> item.completed).length}</div>
             <div className=" flex mt-10 mb-20 mx-6">
+              
               {/* input manual tasks */}
               <input type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className="px-4 h-10 w-3/4 md:w-80 mx-1 flex-1 border-2 border-solid border-gray-400 rounded-md" placeholder="Enter new task" name="tasktitle" id="task" />
+
               {/* add task button */}
               <button type="submit" onClick={()=>handleAddTodo(inputValue)} name="Delete the Note" className=" h-10 w-24 mx-1 text-sm text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out drop-shadow-xl"> ADD TASK</button>
             </div>
