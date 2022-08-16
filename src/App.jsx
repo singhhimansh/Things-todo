@@ -50,9 +50,9 @@ function App() {
   }
 
   const handeleDeleteTodo = (id)=>{
-    let newTodoByID = {...todoByID}
+    let newTodoByID = {...todoByID};
 
-    delete newTodoByID[id]
+    delete newTodoByID[id];
 
     settodoByID(newTodoByID);
 
