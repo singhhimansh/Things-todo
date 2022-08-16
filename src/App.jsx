@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { SiAddthis } from "react-icons/si";
@@ -60,7 +59,9 @@ function App() {
   }
 
   const handleAddTodo =(value)=>{
+
     value=value.trim();
+    
     if (value.length > 2) {
       setAlert(false);
       const newID = Math.random();
@@ -76,10 +77,8 @@ function App() {
       }));
 
       setInputValue('');
-    }
-
-    else {
-      setAlert(true)
+    } else {
+      setAlert(true);
     }
 
   }
@@ -103,7 +102,7 @@ function App() {
                     <div key={item.id} className="px-5 py-3 flex items-center gap-5">
                       <input type="checkbox" className={`cursor-pointer flex-none accent-red-400 ${item.completed ? 'opacity-70' : '' } `} id={`todo-item-${item.id}`} checked={item.completed} onChange={(e)=> handleToggleChecked(e,item.id)} />
 
-                      <label title="Mark it complete" className={` pb-1 w-11/12 flex-initial hover:text-red-500 cursor-pointer ${item.completed ? 'line-through text-red-500 opacity-60' : '' } `} htmlFor={`todo-item-${item.id}`} >{item.title}</label>
+                      <label title="Mark it complete" className={` pb-1 w-11/12 flex-initial hover:text-red-500 cursor-pointer ${item.completed ? 'line-through text-red-500 opacity-60' : '' } `} htmlFor={`todo-item-${item.id}`}>{item.title}</label>
                       
                       <button type="button" title="Delete task" onClick={()=>handeleDeleteTodo(item.id)} className="w-6 h-7">
                         <MdDeleteForever className=" fill-red-500 "/>
@@ -126,7 +125,7 @@ function App() {
               <input type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className=" relative px-4 h-10 w-3/4 md:w-80 mx-1 flex-1 border-2 border-gray-400 focus:outline-green-400  rounded-md " placeholder="Enter new task" name="tasktitle" id="task" />
 
               {/* add task button */}
-              <button type="submit" onClick={()=>handleAddTodo(inputValue)} name="Add a Note" className=" "><SiAddthis title="Add task"  className="w-9 h-9 fill-green-600 hover:fill-green-500 hover:shadow-lg focus:shadow-lg active:fill-green-700  transition duration-150 ease-in-out drop-shadow-xl" /></button>
+              <button type="submit" onClick={()=>handleAddTodo(inputValue)} name="Add a Note"> <SiAddthis title="Add task"  className="w-9 h-9 fill-green-600 hover:fill-green-500 hover:shadow-lg focus:shadow-lg active:fill-green-700  transition duration-150 ease-in-out drop-shadow-xl"/></button>
                 
             </div>
           </div>
