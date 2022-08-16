@@ -1,4 +1,4 @@
-# <img src="./public/images/favicon.png" width="30px"> Things To Do
+# <img src="./public/images/favicon.png" width="30px" /> Things To Do
 
 
 #### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Initially a sample Api Fetch the tasks which can be deleted.
@@ -38,7 +38,7 @@ Landing Page             |  Custom Tasks
 
 Landing Page             |  No Task               
 :-------------------------:|:-------------------------:
-![](./public/images/moblanding.png)  |  ![](./public/images/mobnotask.png) | ![]()
+![](./public/images/moblanding.png)  |  ![](./public/images/mobnotask.png) 
 
 
 ## Installation
