@@ -1,4 +1,4 @@
-# <img src="https://github.com/singhhimansh/todo-react/blob/main/public/images/favicon.png" width="30px"> Things To Do
+# <img src="./public/images/favicon.png" width="30px"> Things To Do
 
 
 #### A responsive web application developed with React.js to add day to day tasks and keep a check on them. Initially a sample Api Fetch the tasks which can be deleted.
@@ -14,7 +14,8 @@ Current Features:
 2. Mark the completed task checked by using checkbox.
 3. Keep a count of completed tasks.
 4. Delete a perticular task.
-5. Responsiveness
+5. Check if input is too small
+6. Responsiveness
 
 Upcoming features:
 1. Search box to find a perticular task
@@ -30,14 +31,14 @@ Upcoming features:
 
 Landing Page             |  Custom Tasks               
 :-------------------------:|:-------------------------:
-![](https://github.com/singhhimansh/todo-react/blob/main/public/images/api.png)  |  ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/custom%20task.png) 
+![](./public/images/pclanding.png)  |  ![](./public/images/pccustom.png) 
 
 
 ### Smartphone
 
-Landing Page             |  No Task               | Custom Tasks
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/singhhimansh/todo-react/blob/main/public/images/apimob.jpg)  |  ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/notask_mob.jpg) | ![](https://github.com/singhhimansh/todo-react/blob/main/public/images/custommob.jpg)
+Landing Page             |  No Task               
+:-------------------------:|:-------------------------:
+![](./public/images/moblanding.png)  |  ![](./public/images/mobnotask.png) | ![]()
 
 
 ## Installation

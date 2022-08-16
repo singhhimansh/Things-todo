@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import { useEffect, useState } from "react";
-import { info } from "autoprefixer";
 import { MdDeleteForever } from "react-icons/md";
 import { SiAddthis } from "react-icons/si";
 
@@ -87,9 +85,9 @@ function App() {
   }
 
   return (
-    // <div className="min-w-screen pt-10 pb-16  min-h-screen bg-gray-400" >
-      <div className=" min-w-screen flex flex-col items-center ">
-        <div className="w-5/6 lg:w-1/2 m-10  bg-gray-50/90  shadow-sky-400/60  border-solid border-2 shadow-xl border-gray-300 rounded-md  ">
+
+      <div className=" min-w-screen min-h-screen flex flex-col justify-center items-center bg-teal-100 ">
+        <div className="w-[95%] lg:w-1/2 m-10  bg-gray-50/90  shadow-teal-400/60  border-solid border-2 shadow-xl border-gray-300 rounded-md  ">
           <div className="w-full mb-20 flex flex-col items-center ">
             <h1 className="my-10 font-bold text-gray-800/90 text-2xl">Things To Do</h1>
             <hr className="w-11/12 md:w-3/4 border-solid border-t-2 border-gray-300" />
@@ -125,7 +123,7 @@ function App() {
             <div className={`w-5/6 md:w-4/6 relative flex mt-10  mx-6 gap-1 md:gap-2 ${ alert ? "before:content-['*Minimum_three_characters_allowed'] before:text-red-400 before:text-xs before:absolute before:-bottom-5 before:left-3" : "" }`}>
               
               {/* input manual tasks */}
-              <input type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className=" relative px-4 h-10 w-3/4 md:w-80 mx-1 flex-1 border-2  border-gray-400 focus:outline-green-400  rounded-md " placeholder="Enter new task" name="tasktitle" id="task" />
+              <input type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className=" relative px-4 h-10 w-3/4 md:w-80 mx-1 flex-1 border-2 border-gray-400 focus:outline-green-400  rounded-md " placeholder="Enter new task" name="tasktitle" id="task" />
 
               {/* add task button */}
               <button type="submit" onClick={()=>handleAddTodo(inputValue)} name="Add a Note" className=" "><SiAddthis title="Add task"  className="w-9 h-9 fill-green-600 hover:fill-green-500 hover:shadow-lg focus:shadow-lg active:fill-green-700  transition duration-150 ease-in-out drop-shadow-xl" /></button>
